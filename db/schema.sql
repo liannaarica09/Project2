@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS triggers;
+CREATE DATABASE triggers; 

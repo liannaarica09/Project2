@@ -1,0 +1,70 @@
+<body class="yellow">
+
+    <div class="smallLogo">
+        <a href="/index">
+            <input id="logoImage" type="image" src="/assets/logo-01.png" name="saveForm" class="btTxt submit" id="saveForm" />
+        </a>
+    </div>
+    <div>
+        <form id="sign-inForm" action="/sign-in" method="POST">
+            <div class="form-group">
+                <label id="email" for="exampleInputEmail1">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"
+                    required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label id="password" for="exampleInputPassword1">Password</label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <div id="buttonDiv">
+                <button id="sign-in-btn" type="submit" class="btn btn-primary">Sign In</button>
+
+                <button type="submit" class="btn btn-primary" id="sign-up-btn">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+<script src="/js/graphs.js"></script>
+<script src="js/front.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+        $("#sign-up-btn").on("click", function (event) {
+            location.href = "/sign-up";
+        });
+
+        var attempt = 3;
+        function validate() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            if (email == "tgonzalez888@yahoo.com" && password == "Tony") {
+                alert("Login successfull");
+                window.location = "/main.handlebars"; // Redirecting to other page.
+                return false;
+            }
+            else {
+                attempt--;// Decrementing by one.
+                alert("You have left " + attempt + " attempt;");
+                // Disabling fields after 3 attempts.
+                if (attempt == 0) {
+                    attempt--;
+                    document.getElementById("email").disabled = true;
+                    document.getElementById("password").disabled = true;
+                    document.getElementById("sign-up").disabled = true;
+                    return false;
+                }
+            }
+        };
+    });
+
+</script>

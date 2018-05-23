@@ -1,0 +1,197 @@
+.smallLogo {
+    width: 300px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* sign-in.handlebars */
+
+#sign-inForm {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    margin-bottom: 100px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/*  index.handlebars */
+
+.navbar {
+    color: white !important;
+    background: black;
+    font-size: 15px;
+}
+
+.bg-light {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.nav-link:hover {
+    color: #FABC00 !important;
+}
+
+#logo-2 {
+    width: 60px;
+    height: 70px;
+    background-color: black;
+    margin-right: 30px;
+}
+
+.btn-outline-success {
+    border-color: #FABC00 !important;
+}
+
+.form-inline {
+    margin-right: 150px;
+}
+
+.indexBody {
+    background-color: black;
+}
+
+#weather {
+    border: white solid 1px;
+    /* background-color: white; */
+    min-height: 300px;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-style: bold;
+    color: #FABC00;
+    font-size: 30px;
+}
+
+#graph {
+    margin-top: 30px;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+#circles {
+    display: grid;
+    padding-top: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    grid-gap: 10px;
+}
+
+.circleContainer {
+    display: block;
+    width: 100%;
+}
+
+/* 
+.form-control {
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-bottom: 100px;  
+} */
+
+button.btn {
+    color: black;
+    background-color: white !important;
+}
+
+#inputLocation {
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 5px 5px 5px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* sign-up.handlebars */
+
+#sign-up {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 150px 80px 50px 80px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* logo.handlebars */
+
+.yellow {
+    background-color: #FABC00;
+}
+
+#logo {
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#logoImage {
+    width: 80%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+#logoImage:active {
+    background-color: #FABC00;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* removes outline around image */
+
+#logoImage:focus {
+    outline: none !important;
+}
+
+/* loading circle style */
+
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid darkslategray;
+    /* dark grey */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    position: absolute;
+    left: 45%;
+    top: 80%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
