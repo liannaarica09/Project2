@@ -41,7 +41,7 @@ $("#sign-in-btn").on("click", function (event) {
 });
 
 function hourlyForcast() {
-    var queryURL = "http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/335315?apikey=ADBLR0VCWoVNPXvAhO9vBXTtlAAU8sfM&language=en-us&details=true";
+    var queryURL = "https://dataservice.accuweather.com/forecasts/v1/hourly/12hour/335315?apikey=ADBLR0VCWoVNPXvAhO9vBXTtlAAU8sfM&language=en-us&details=true";
     $.ajax({
         url: queryURL,
         method: "GET",
@@ -250,7 +250,7 @@ Object.byString = function (o, s) {
 //pie chart functions
 
 function dailyForcast() {
-    var queryURL = "http://dataservice.accuweather.com/forecasts/v1/daily/1day/335315?apikey=ADBLR0VCWoVNPXvAhO9vBXTtlAAU8sfM&details=true";
+    var queryURL = "https://dataservice.accuweather.com/forecasts/v1/daily/1day/335315?apikey=ADBLR0VCWoVNPXvAhO9vBXTtlAAU8sfM&details=true";
     $.ajax({
         url: queryURL,
         method: "GET",

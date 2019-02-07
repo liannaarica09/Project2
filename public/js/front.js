@@ -91,7 +91,7 @@ function getCordsLocation(currentCords) {
     // var currentLat = position.coords.latitude;
     // var currentLong = position.coords.longitude;
     var apikey = "ADBLR0VCWoVNPXvAhO9vBXTtlAAU8sfM";
-    var queryURL = "http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=" + apikey + "&q=" + currentCords + "&language=en-us&details=true";
+    var queryURL = "https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=" + apikey + "&q=" + currentCords + "&language=en-us&details=true";
     $.ajax({
         url: queryURL,
         method: "GET",
@@ -114,7 +114,7 @@ function defaultPage() {
     // var defaultcity = Sacramento;
     dafaultLocationKey = 347627;
     var apikey = "ADBLR0VCWoVNPXvAhO9vBXTtlAAU8sfM";
-    var queryURL = "http://dataservice.accuweather.com/currentconditions/v1/347627?apikey=" + apikey + "&language=en-us&details=true";
+    var queryURL = "https://dataservice.accuweather.com/currentconditions/v1/347627?apikey=" + apikey + "&language=en-us&details=true";
     $.ajax({
         url: queryURL,
         method: "GET",
@@ -154,7 +154,7 @@ function getCityLocation(city) {
     // var locationKey = "";
     // var city = document.getElementById('#userInput').value;
     var apikey = "ADBLR0VCWoVNPXvAhO9vBXTtlAAU8sfM";
-    var queryURL = "http://dataservice.accuweather.com/locations/v1/cities/search?apikey=" + apikey + "&q=" + city + "&language=en-us&details=true&alias=Always";
+    var queryURL = "https://dataservice.accuweather.com/locations/v1/cities/search?apikey=" + apikey + "&q=" + city + "&language=en-us&details=true&alias=Always";
     $.ajax({
         url: queryURL,
         method: "GET",
@@ -172,7 +172,7 @@ function getCityLocation(city) {
 function dailyTemp() {
 
     var apikey = "ADBLR0VCWoVNPXvAhO9vBXTtlAAU8sfM";
-    var queryURL = "http://dataservice.accuweather.com/currentconditions/v1/" + locationKey + "?apikey=" + apikey + "&language=en-us&details=true";
+    var queryURL = "https://dataservice.accuweather.com/currentconditions/v1/" + locationKey + "?apikey=" + apikey + "&language=en-us&details=true";
     $.ajax({
         url: queryURL,
         method: "GET",
